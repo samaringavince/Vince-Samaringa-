@@ -1,0 +1,17 @@
+// Subclass for Staff
+class Staff extends Person {
+    private String department;
+    
+    // Constructor to initialize fields
+    public Staff(String name, int id, String department) {
+        super(name, id); // Call to parent constructor
+        this.department = department;
+    }
+    
+    / Overriding displayInfo method
+    @Override
+    public void displayInfo() {
+        super.displayInfo(); // Call to parent method
+        System.out.println("Department: " + department);
+    }
+}
